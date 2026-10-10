@@ -1,4 +1,5 @@
 ##### Author: Instructor team SE, ASU Polytechnic, CIDSE, SE
+##### Student: Murtadha Ghanim
 
 ##### Purpose
 This is starter code for Assignment 3, Task 1.
@@ -337,7 +338,7 @@ Error response (negative amount):
 
 
 ### Playlist: ###
-**TODO - Part C (Option 2):** You need to implement this service following the protocol specification below.
+**Part C selection:** Currency Converter was selected and implemented. Playlist Manager was not selected; its provided protocol specification is retained below for reference.
 
 This service manages a playlist of songs. The client can add songs, remove songs, list the playlist contents, and clear the playlist. The playlist persists for the duration of the client connection.
 
@@ -490,7 +491,7 @@ A mystery service is included in this starter code (provided as a JAR file). You
 
 The service type is `"analyzer"` - it is already integrated into the server. All other details must be discovered through testing.
 
-See PDF and `discovery_and_protocol_TEMPLATE.md` for the required documentation format.
+The completed discovery log and protocol documentation are in `discovery_and_protocol.md`.
 
 ---
 

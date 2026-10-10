@@ -32,7 +32,7 @@ Run automated tests:
 
 ## Video Demonstration
 
-**Link:** [Insert your 4-7 minute demonstration video link here]
+**Link:** https://drive.google.com/file/d/18YP2FP6DwOl5lrK5xG5tkswPbErdpP5D/view?usp=sharing
 
 ## Implemented Features Checklist
 
@@ -52,8 +52,6 @@ Run automated tests:
 - [x] Automated JUnit tests
 
 ### Optional Features
-- [ ] Hint feature
-- [ ] Whole-word guessing
 - [ ] Leaderboard extra credit
 
 ---
@@ -130,7 +128,7 @@ Empty name:
 
 ## 2. Start New Game
 
-A player name must already be set and no other game may currently be active. The server randomly selects a word, clears previous guesses, resets incorrect guesses to zero, and prints the selected word in the server terminal for testing/grading.
+A player name must already be set and no other game may currently be active. The server randomly selects a word, clears previous guesses, resets incorrect guesses to zero, and prints the selected word in the server terminal.
 
 ### Request
 ```json
@@ -505,13 +503,11 @@ The tests use a fixed word (`java`) so assertions are deterministic.
 # Assumptions
 
 1. The supplied word list contains alphabetic lowercase words.
-2. The starter architecture handles one connected client at a time, so the static state represents that client only.
+2. The implementation handles one connected client at a time, so the static state represents that client only.
 3. Guess letters are normalized to lowercase; uppercase and lowercase are equivalent.
 4. Six incorrect guesses causes a loss, matching the seven supplied Hangman stages numbered 0-6.
 
 # Known Limitations
 
 1. The optional leaderboard is not implemented.
-2. Hint and whole-word guessing are not implemented because they are not required for the core assignment.
-3. The server follows the starter design and services one client connection at a time rather than using one thread per client.
-4. The demonstration video link must be added after recording the required 4-7 minute demo.
+2. The server services one client connection at a time rather than using one thread per client.

@@ -16,7 +16,7 @@ public class HangmanServer {
     static ObjectInputStream in;
     static int port = 8888;
 
-    // Per-connection game state. The starter server handles one client at a time.
+    // Per-connection game state.
     static String playerName = null;
     static String secretWord = null;
     static Set<Character> usedLetters = new HashSet<>();
@@ -159,7 +159,6 @@ public class HangmanServer {
         misses = 0;
         inGame = true;
 
-        // Required by the assignment so a grader can easily test correct guesses.
         System.out.println("Selected word: " + secretWord);
 
         JSONObject res = gameStateResponse("start");

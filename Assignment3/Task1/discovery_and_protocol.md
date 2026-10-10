@@ -1,5 +1,7 @@
 # Task 1: Mystery Service Discovery and Protocol Documentation
 
+**Student:** Murtadha Ghanim
+
 **How I tested:** Controlled requests against the provided `mysteryservice.jar`, plus automated protocol tests in `ServerTest.java`.
 
 ---

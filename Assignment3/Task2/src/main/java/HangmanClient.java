@@ -288,7 +288,7 @@ public class HangmanClient {
             if (in != null) in.close();
             if (sock != null) sock.close();
         } catch (Exception e) {
-            // Nothing else to do while exiting.
+            // Ignore cleanup errors while exiting.
         }
     }
 }

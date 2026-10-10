@@ -1,5 +1,7 @@
 # StringConcatenation Debugging Exercise
 
+**Student:** Murtadha Ghanim
+
 ## Overview
 I compared the documented `stringconcatenation` request/response contract in `README.md` with both `SockClient.java` and `SockServer.java`. The assignment requires at least four protocol violations; I found and corrected five related problems so the service now follows the documented field names and response structure and rejects missing/wrong string inputs cleanly.
 
