@@ -77,5 +77,5 @@ returns `"result":"abc123"`.
 ## Additional validation improvement
 The server now verifies that both `string1` and `string2` are JSON strings. If either has another JSON type, it returns:
 ```json
-{"ok":false,"message":"Fields string1/string2 need to be of type: String"}
+{"type":"stringconcatenation","ok":false,"message":"Fields string1/string2 need to be of type: String"}
 ```

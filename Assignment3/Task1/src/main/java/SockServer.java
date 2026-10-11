@@ -179,16 +179,19 @@ public class SockServer {
 
     JSONObject res = testField(req, "string1");
     if (!res.getBoolean("ok")) {
+      res.put("type", "stringconcatenation");
       return res;
     }
 
     res = testField(req, "string2");
     if (!res.getBoolean("ok")) {
+      res.put("type", "stringconcatenation");
       return res;
     }
 
     if (!(req.get("string1") instanceof String) || !(req.get("string2") instanceof String)) {
       res = new JSONObject();
+      res.put("type", "stringconcatenation");
       res.put("ok", false);
       res.put("message", "Fields string1/string2 need to be of type: String");
       return res;

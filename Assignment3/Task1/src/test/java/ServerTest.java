@@ -209,6 +209,7 @@ public class ServerTest {
         invalid.put("string1", "Hello");
         res = send(invalid);
         assertFalse(res.getBoolean("ok"));
+        assertEquals("stringconcatenation", res.getString("type"));
         assertEquals("Field string2 does not exist in request", res.getString("message"));
     }
 
